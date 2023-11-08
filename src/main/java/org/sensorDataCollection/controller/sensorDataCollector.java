@@ -46,8 +46,6 @@ public class sensorDataCollector {
         sensor_data.setTimestamp(formattedTimeStamp);
         storesensordata.saveData(sensor_data);
 
-//        String formattedDate = date.format(DateTimeFormatter.ISO_LOCAL_DATE);
-//        String formattedTime = time.format(DateTimeFormatter.ISO_LOCAL_TIME);
 
         return new ResponseEntity<>(sensor_data, HttpStatus.OK);
     }
