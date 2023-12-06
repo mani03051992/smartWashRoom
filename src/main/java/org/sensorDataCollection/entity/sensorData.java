@@ -1,6 +1,7 @@
 package org.sensorDataCollection.entity;
 
-import java.time.LocalDateTime;
+
+import java.util.Date;
 
 public class sensorData {
     public String getDeviceID() {
@@ -19,11 +20,11 @@ public class sensorData {
         this.ammoniaValue = ammoniaValue;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -38,7 +39,17 @@ public class sensorData {
     public String deviceID;
     public String ammoniaValue;
 
-    public String date;
+    public Date date;
+
+    public String getFormattedDate() {
+        return formattedDate;
+    }
+
+    public void setFormattedDate(String formattedDate) {
+        this.formattedDate = formattedDate;
+    }
+
+    public String formattedDate;
 
     public String time;
 
