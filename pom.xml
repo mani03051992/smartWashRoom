@@ -108,7 +108,7 @@
             </plugin>
             
         </plugins>
-        <finalName> smartWashroomjar</finalName>
+        <finalName> smartDataCollector</finalName>
     </build>
 
 </project>
